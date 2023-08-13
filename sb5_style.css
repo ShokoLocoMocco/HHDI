@@ -1,0 +1,233 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Epilogue:wght@900&family=Oswald:wght@200;600&family=Poppins:ital,wght@0,200;0,300;0,600;1,300;1,900&family=Special+Elite&family=Yanone+Kaffeesatz:wght@700&display=swap');
+
+
+/*
+font-family: 'Anton', sans-serif;
+font-family: 'Epilogue', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Special Elite', cursive;
+font-family: 'Yanone Kaffeesatz', sans-serif;
+*/
+
+
+:root {
+  --color-blue: #14499e;
+  --color-bg-alpha: rgba(32, 48, 66, 0.8);
+  --color-pinklt: #f05480;
+  --color-pink: #ef4581;
+  --color-yellow: #fcb316;
+  --color-bluelt: #889ed1;
+  --color-bluedk: #282561;
+  --color-bluemd: #4f4f8d;
+  --color-wht-alpha: rgba(255, 255, 255, 0.8);
+  --color-bg: rgba(136, 158, 209, 0.2);
+}
+
+html {
+  /* Setting a base font size of 10px give us easier rem calculations
+     Info: 1rem === 10px, 1.5rem === 15px, 2rem === 20px and so forth
+   */
+  font-size: 16px;
+}
+
+
+body {
+  background-color: #f5f5f5;
+  font-family: Segoe UI, Tahoma, Verdana, Geneva, sans-serif;
+}
+
+h1 {
+  color: #4d4d4d;
+  font-family: 'Anton', sans-serif;
+  font-weight: 600;
+}
+h2,
+h3,
+h4,
+h5 {
+  color: #4d4d4d;
+  font-family: 'Anton', sans-serif;
+  font-weight: 400;
+}
+
+h6 {
+  color: var(--color-wht-alpha);
+  font-family: 'Anton', sans-serif;
+}
+
+.span-nvy {
+  font-family: 'Special Elite', cursive;
+  color: var(--color-blue);
+  font-weight: 600;
+}
+
+/*-- navbar --*/
+
+.navbar {
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: var(--color-bluelt);
+  font-family: 'Oswald';
+  font-weight: 600;
+  border: 0;
+}
+
+.navbar-collapse {
+  justify-content: end!important;
+}
+
+.dropdown-item {
+  background-color: #f5f5f5;
+  color: var(--color-bluedk);
+  font-size: 14px;
+}
+
+
+
+/* not working? */
+.dropdown-item:hover {
+  background-color: var(--color-bluedk)!important;
+  color: var(--color-wht-alpha)!important;
+  font-weight: 600;
+}
+
+/* working */
+.dropdown-item.active {
+  background-color: var(--color-wht-alpha)!important;
+  color: var(--color-bluedk)!important;
+  font-weight: 600;
+}
+
+.navbar-dark .navbar-nav>.active {
+  background-color: #f5f5f5;
+  color: var(--color-bluedk);
+}
+
+.navbar-dark .navbar-nav>.active>a {
+  background-color: #f5f5f5;
+  color: var(--color-bluedk);
+}
+
+.navbar-dark .navbar-nav>.active>a:hover {
+  background-color: #f5f5f5;
+  color: var(--color-bluedk);
+}
+
+#navburger {
+  border: 0;
+}
+
+.navbar-dark .navbar-nav>li>a {
+  color: var(--color-wht-alpha);
+}
+
+
+
+.navbar-dark .navbar-toggle {
+  border: 0;
+}
+
+.navbar-dark .navbar-toggle:hover {
+  background-color: var(--color-bluedk)!important;
+  color: var(--color-wht-alpha)!important;
+}
+
+.navbar-dark .navbar-toggle:focus {
+  background-color: var(--color-bg);
+  border: 0;
+}
+
+/*
+.content {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+*/
+
+/* for div */
+.button {
+  align-items: center;
+}
+
+.sb-button {
+  font-size: 16px;
+  padding: 10px 20px;
+  transition-duration: 0.4s;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+}
+
+.quote {
+  border: none;
+  background-color: var(--color-bluemd);
+  color: var(--color-yellow);
+}
+
+.quote:hover {
+  background-color: var(--color-bluedk);
+}
+
+.learnmore {
+  border: 2px solid var(--color-bluedk);
+  background-color: var(--color-wht-alpha);
+  color: var(--color-bluemd);
+}
+
+.learnmore:hover {
+  background-color: var(--color-bluemd);
+  color: var(--color-yellow)
+}
+
+.discl {
+  background-color: var(--color-bluemd);
+  color: var(--color-wht-alpha);
+  font-size: small;
+}
+
+.img-text {
+  background-color: black;
+  color: white;
+}
+
+.top-pic {
+  margin-bottom: 100px;
+}
+
+.no-m-p {
+  margin: 0px;
+  padding: 0px;
+}
+
+footer {
+  background-color: var(--color-bluelt);
+  color:rgba(255, 255, 255, 0.8);
+}
+
+.footer-grid {
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+
+.footer-grid a {
+  color: var(--color-wht-alpha)!important;
+  font-size: small;
+  text-decoration: none;
+}
+
+.footer-grid a:hover {
+  color: var(--color-wht-alpha)!important;
+  text-decoration: underline;
+}
+
+
+.copyright {
+  font-size: x-small;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
