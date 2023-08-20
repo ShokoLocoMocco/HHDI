@@ -13,16 +13,12 @@ font-family: 'Yanone Kaffeesatz', sans-serif;
 
 
 :root {
-  --color-blue: #14499e;
-  --color-bg-alpha: rgba(32, 48, 66, 0.8);
-  --color-pinklt: #f05480;
-  --color-pink: #ef4581;
-  --color-yellow: #fcb316;
-  --color-bluelt: #889ed1;
-  --color-bluedk: #282561;
-  --color-bluemd: #4f4f8d;
-  --color-wht-alpha: rgba(255, 255, 255, 0.8);
-  --color-bg: rgba(136, 158, 209, 0.2);
+   --color-hhdi-blue: #2351b7;
+   --color-hhdi-grn: #00a859;
+   --color-hhdi-yellow: #fbb216;
+   --color-hhdi-grylt: #cececd;
+   --color-hhdi-blk: #231f20;
+   --color-hhdi-red: #ec1c24;
 }
 
 html {
@@ -68,7 +64,7 @@ h6 {
 .navbar {
   padding-top: 0;
   padding-bottom: 0;
-  background-color: var(--color-bluelt);
+  background-color: var(--color-hhdi-red);
   font-family: 'Oswald';
   font-weight: 600;
   border: 0;
