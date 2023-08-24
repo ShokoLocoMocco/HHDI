@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Epilogue:wght@900&family=Oswald:wght@200;600&family=Poppins:ital,wght@0,200;0,300;0,600;1,300;1,900&family=Special+Elite&family=Yanone+Kaffeesatz:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Epilogue:wght@900&family=Bangers&family=Oswald:wght@200;600&family=Poppins:ital,wght@0,200;0,300;0,600;1,300;1,900&family=Special+Elite&family=Yanone+Kaffeesatz:wght@700&display=swap');
 
 
 /*
@@ -9,6 +9,7 @@ font-family: 'Oswald', sans-serif;
 font-family: 'Poppins', sans-serif;
 font-family: 'Special Elite', cursive;
 font-family: 'Yanone Kaffeesatz', sans-serif;
+font-family: 'Bangers', cursive;
 */
 
 
@@ -30,32 +31,43 @@ html {
 
 
 body {
-  background-color: #f5f5f5;
+  background-color: var(--color-hhdi-blk)!important;
   font-family: Segoe UI, Tahoma, Verdana, Geneva, sans-serif;
+  color: var(--color-hhdi-grylt)!important;
+}
+
+.hlarge {
+  font-size: 48px;
 }
 
 h1 {
-  color: #4d4d4d;
-  font-family: 'Anton', sans-serif;
-  font-weight: 600;
+  color: var(--color-hhdi-red);
+  font-family: 'Bangers', cursive;
 }
+
 h2,
 h3,
 h4,
 h5 {
-  color: #4d4d4d;
-  font-family: 'Anton', sans-serif;
+  color: var(--color-hhdi-red);
+  font-family: 'Bangers', cursive;
   font-weight: 400;
 }
 
 h6 {
-  color: var(--color-wht-alpha);
-  font-family: 'Anton', sans-serif;
+  color: rgba(255,255,255,.55);
+  font-family: 'Bangers', cursive;
+}
+
+.italquote {
+  font-family: 'Special Elite', cursive;
+  font-style: italic;
+  font-size: 1.2em;
 }
 
 .span-nvy {
   font-family: 'Special Elite', cursive;
-  color: var(--color-blue);
+  color: var(--color-hhdi-yellow);
   font-weight: 600;
 }
 
@@ -64,9 +76,9 @@ h6 {
 .navbar {
   padding-top: 0;
   padding-bottom: 0;
-  background-color: var(--color-hhdi-red);
-  font-family: 'Oswald';
-  font-weight: 600;
+  background-color: #000;
+  font-family: 'Bangers', cursive;
+  font-size: large;
   border: 0;
 }
 
@@ -200,8 +212,8 @@ h6 {
 }
 
 footer {
-  background-color: var(--color-bluelt);
-  color:rgba(255, 255, 255, 0.8);
+  background-color: #000;
+  color: var(--color-hhdi-grylt)!important;
 }
 
 .footer-grid {
@@ -210,14 +222,14 @@ footer {
 }
 
 .footer-grid a {
-  color: var(--color-wht-alpha)!important;
+  color: rgba(255,255,255,.55);
   font-size: small;
   text-decoration: none;
 }
 
 .footer-grid a:hover {
-  color: var(--color-wht-alpha)!important;
-  text-decoration: underline;
+  color: var(--color-hhdi-red)!important;
+  text-decoration: none;
 }
 
 
