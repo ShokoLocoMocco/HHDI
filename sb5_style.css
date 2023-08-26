@@ -27,6 +27,7 @@ html {
      Info: 1rem === 10px, 1.5rem === 15px, 2rem === 20px and so forth
    */
   font-size: 16px;
+  height: 100%;
 }
 
 
@@ -34,6 +35,19 @@ body {
   background-color: var(--color-hhdi-blk)!important;
   font-family: Segoe UI, Tahoma, Verdana, Geneva, sans-serif;
   color: var(--color-hhdi-grylt)!important;
+  height: 100%;
+}
+
+body .parallax {
+  background: url(img/bg_hhdi.png) top right;
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 
@@ -149,15 +163,9 @@ h6 {
 }
 
 
-.header {
-  position: relative;
-  height: 400px;/* Set a suitable height for the header */
-  margin-bottom: 20px; 
-}
-
-.parallax {
-  background-image: url("img/header-text_hhdi-tp.png"), url("img/header-bg_hhdi.png");
-  min-height: 100%; /* Adjust to cover the header and navigation bar */
+.parallax-bg {
+  background-image: url("img/bg_hhdi.png");
+  height: 100%; /* Adjust to cover the header and navigation bar */
   position: relative;
   background-attachment: fixed;
   background-position: center 40%, top;
@@ -189,6 +197,7 @@ h6 {
 
 .img-container {
   align-items: center;
+  justify-content: center;
 }
 
 
