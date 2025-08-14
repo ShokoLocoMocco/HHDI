@@ -14,12 +14,14 @@ font-family: 'Bangers', cursive;
 
 
 :root {
+  /*
    --color-hhdi-blue: #2351b7;
    --color-hhdi-grn: #00a859;
    --color-hhdi-yellow: #fbb216;
    --color-hhdi-grylt: #cececd;
    --color-hhdi-blk: #231f20;
-   --color-hhdi-red: #ec1c24;
+   --color-hhdi-red: #ec1c24; */
+
    --font-Anton: 'Anton', sans-serif;
    --font-Epilogue: 'Epilogue', sans-serif;
    --font-Oswald: 'Oswald', sans-serif;
@@ -29,6 +31,17 @@ font-family: 'Bangers', cursive;
    --font-Bangers: 'Bangers', cursive;
    --font-Segoe: 'Segoe UI', Tahoma, Verdana, Geneva, sans-serif;
    --font-Courier: 'Courier New', Courier, monospace;
+}
+
+/* color 08/214/25 */
+:root {
+  --color-hhdi-blue: #5170ff; 
+  --color-hhdi-grn: #865ddb; 
+  --color-hhdi-yellow: #ff9d38; 
+  --color-hhdi-red: #eb04a3;
+
+  --color-hhdi-grylt: #f7f8fa; 
+  --color-hhdi-blk: #242424; 
 }
 
 html {
@@ -185,7 +198,8 @@ body .parallax {
 }
 
 h1 {
-  color: var(--color-hhdi-red);
+  color: var(--color-hhdi-grn);
+  text-shadow: 1px 1px 2px var(--color-hhdi-blk), 1px 1px 20px var(--color-hhdi-yellow);
   font-family: var(--font-Bangers);
 }
 
