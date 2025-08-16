@@ -223,15 +223,23 @@ h6 {
 
 .italquote {
   font-family: var(--font-Elite);
-  color: var(--color-hhdi-grylt);
+  color: var(--color-hhdi-yellow);
   font-style: italic;
   font-size: 1.2em;
 }
 
 .span-nvy {
   font-family: var(--font-Elite);
-  color: var(--color-hhdi-yellow);
+  color: var(--color-hhdi-red);
   font-weight: 600;
+  text-shadow: 2px 5px 3px #000;
+}
+
+.span-title {
+  font-family: var(--font-Elite);
+  color: var(--color-hhdi-blk);
+  font-weight: 600;
+  text-shadow: 1px 1px 2px var(--color-hhdi-yellow);
 }
 
 /*-- navbar --*/
@@ -239,7 +247,7 @@ h6 {
 .navbar {
   padding-top: 0;
   padding-bottom: 0;
-  background-color: #000;
+  background-color: var(--color-hhdi-blk);
   font-family: var(--font-Bangers);
   font-size: large;
   border: 0;
