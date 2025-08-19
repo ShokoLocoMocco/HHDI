@@ -209,6 +209,7 @@ body .parallax {
   background-repeat: no-repeat;
   background-size: 200% auto; /* zoomed out on small screens */
   background-position: 100% 40%;
+  transform: translateZ(0);
 }
 }
 
