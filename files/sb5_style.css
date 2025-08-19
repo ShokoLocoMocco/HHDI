@@ -199,7 +199,7 @@ body .parallax {
 
 @media (max-width: 800px) {
   body .parallax {
-  background: url(../img/HHDI_top.png)  top right;
+  background: url(../img/HHDI_top.png)  bottom right;
     margin: 0;
   /* Full width */
   width: 100%; 
