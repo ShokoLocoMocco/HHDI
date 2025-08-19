@@ -202,20 +202,16 @@ body .parallax {
   background: url(../img/HHDI_top.png)  bottom right;
     margin: 0;
   /* Full width */
-  height: 100%; 
+
 
   /* Create the parallax scrolling effect */
-  background-attachment: scroll;
+  background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 100dvh;    
+  background-size: 200% auto; /* zoomed out on small screens */
+  background-position: 100% 40%;
 }
 }
 
-.parallax { min-height: 100dvh; }
-@supports not (height: 100dvh) {
-  .parallax { min-height: 100vh; } /* fallback */
-}
 
 
 
