@@ -198,8 +198,10 @@ body .parallax {
 
 
 @media (max-width: 800px) {
-  body .parallax {
-  background: url(../img/HHDI_top.png)  bottom right;
+  body .parallax::before {
+  content: "";
+  inset: 0;
+  background: url(../img/HHDI_top.png);
     margin: 0;
   /* Full width */
 
