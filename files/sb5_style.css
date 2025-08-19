@@ -205,11 +205,20 @@ body .parallax {
   height: 100%; 
 
   /* Create the parallax scrolling effect */
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 100dvh;    
 }
 }
+
+.parallax { min-height: 100dvh; }
+@supports not (height: 100dvh) {
+  .parallax { min-height: 100vh; } /* fallback */
+}
+
+
+
 
 .hlarge {
   font-size: 48px;
