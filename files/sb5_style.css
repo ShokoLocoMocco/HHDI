@@ -212,7 +212,14 @@ body .parallax {
 }
 }
 
+@supports (-webkit-touch-callout: none) {
+  .parallax { background-attachment: scroll; }
+}
 
+.parallax { min-height: 100dvh; }
+@supports not (height: 100dvh) {
+  .parallax { min-height: 100vh; } /* fallback */
+}
 
 
 
