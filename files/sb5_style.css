@@ -54,18 +54,17 @@ font-family: 'Bangers', cursive;
    */
 
 
-* {
-    margin: 0; /* Ensure no default margin affects the layout */
-    padding: 0;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box; /* Firexfox */
-    -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
-}
+
   
 html {
   font-size: 16px;
   height: 100%;
-  overflow-x: hidden;
+  margin: 0; /* Ensure no default margin affects the layout */
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  overflow-x: clip;
 }
 
 body {
@@ -73,6 +72,7 @@ body {
   font-family: var(--font-Segoe)!important;
   color: var(--color-hhdi-ltbg)!important;
   height: 100%;
+  overflow-x: clip;
 }
 
 
@@ -185,7 +185,7 @@ body {
 
 
 body .parallax {
-  background: url(../img/bg_hhdi.png) top right;
+  background: url(../img/HHDI_top.png) top right;
 
   /* Full height */
   height: 100%; 
@@ -196,10 +196,11 @@ body .parallax {
   background-size: cover;
 }
 
-@media (max-width: 800px) {
-  .parallax {
-  background: url(img/sq_newsonar.png);
 
+@media (max-width: 800px) {
+  body .parallax {
+  background: url(../img/HHDI_top.png)  top right;
+    margin: 0;
   /* Full width */
   width: 100%; 
 
@@ -282,7 +283,7 @@ h6 {
 
 /* not working? */
 .dropdown-item:hover {
-  background-color: var(--color-bluedk)!important;
+  background-color: var(--color-hhdi-ltbg)!important;
   color: var(--color-hhdi-pur)!important;
   font-weight: 600;
 }
@@ -326,19 +327,20 @@ h6 {
 }
 
 .navbar-dark .navbar-toggle:hover {
-  background-color: var(--color-bluedk)!important;
+  background-color: var(--color-hhdi-dkbg)!important;
   color: var(--color-wht-alpha)!important;
 }
 
 .navbar-dark .navbar-toggle:focus {
-  background-color: var(--color-bg);
+  background-color: var(--color-hhdi-dkbg);
   border: 0;
 }
 
+/*Adjust to cover the header and navigation bar 
 
 .parallax-bg {
   background-image: url("img/bg_hhdi.png");
-  height: 100%; /* Adjust to cover the header and navigation bar */
+  height: 100%; /* 
   position: relative;
   background-attachment: fixed;
   background-position: center 40%;
@@ -361,7 +363,7 @@ h6 {
 @media (min-width: 1435px) {
   .parallax {
     background-image: url("img/header-text_hhdi-tp.png"), url("img/header-bg_hhdi.png");
-    min-height: 100%; /* Adjust to cover the header and navigation bar */
+    min-height: 100%; /* Adjust to cover the header and navigation bar 
     position: relative;
     background-attachment: fixed;
     background-position: center 20%, top;
@@ -374,6 +376,8 @@ h6 {
     align-items: center, stretch;  
   }
 }
+
+*/
 
 
 .img-container {
