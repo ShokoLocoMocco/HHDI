@@ -1,26 +1,7 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bangers&family=Cinzel:wght@400..900&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Special+Elite&family=Yanone+Kaffeesatz:wght@200..700&display=swap');
-
-/*
-font-family: 'Anton', sans-serif;
-font-family: 'Epilogue', sans-serif;
-font-family: 'Oswald', sans-serif;
-font-family: 'Poppins', sans-serif;
-font-family: 'Special Elite', cursive;
-font-family: 'Yanone Kaffeesatz', sans-serif;
-font-family: 'Bangers', cursive;
-*/
-
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bangers&family=Belanosima:wght@400;600;700&family=Cinzel:wght@400..900&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Special+Elite&family=Yanone+Kaffeesatz:wght@200..700&display=swap');
 
 :root {
-  /*
-   --color-hhdi-blue: #2351b7;
-   --color-hhdi-grn: #00a859;
-   --color-hhdi-yellow: #fbb216;
-   --color-hhdi-grylt: #cececd;
-   --color-hhdi-blk: #231f20;
-   --color-hhdi-red: #ec1c24; */
-
    --font-Anton: 'Anton', sans-serif;
    --font-Epilogue: 'Epilogue', sans-serif;
    --font-Oswald: 'Oswald', sans-serif;
@@ -31,10 +12,9 @@ font-family: 'Bangers', cursive;
    --font-Segoe: 'Segoe UI', Tahoma, Verdana, Geneva, sans-serif;
    --font-Courier: 'Courier New', Courier, monospace;
    --font-Cinzel: 'Cinzel', serif;
-}
+   --font-Belanosima: "Belanosima", sans-serif;
 
 /* color 08/17/25 */
-:root {
   --color-hhdi-ltbg: #f7f8fa; 
   --color-hhdi-pk-l: #eb04a3;
   --color-hhdi-pur: #865ddb; 
@@ -53,9 +33,6 @@ font-family: 'Bangers', cursive;
      Info: 1rem === 10px, 1.5rem === 15px, 2rem === 20px and so forth
    */
 
-
-
-  
 html {
   font-size: 16px;
   height: 100%;
@@ -184,7 +161,7 @@ body {
 
 
 
-body .parallax {
+#ck {
   background: url(../img/HHDI_top.png) top right;
 
   /* Full height */
@@ -198,7 +175,7 @@ body .parallax {
 
 
 @media (max-width: 800px) {
-  body .parallax::before {
+  #ck::before {
   content: "";
   inset: 0;
   background: url(../img/HHDI_top.png);
@@ -215,8 +192,39 @@ body .parallax {
 }
 }
 
+#bpl {
+  background: url(../img/hhdi_top_bpl.png) top left;
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+@media (max-width: 800px) {
+  #bpl::before {
+  content: "";
+  inset: 0;
+  background: url(../img/hhdi_top_bpl.png);
+  margin: 0;
+  /* Full width */
+
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 200% auto; /* zoomed out on small screens */
+  background-position: 0% 0%;
+  transform: translateZ(0);
+}
+}
+
 @supports (-webkit-touch-callout: none) {
-  .parallax { background-attachment: scroll; }
+  .parallax { background-attachment: fixed; }
 }
 
 .parallax { min-height: 100dvh; }
@@ -393,6 +401,17 @@ h6 {
 }
 
 */
+
+.inparag img {
+  width: 80%;
+}
+
+@media  (min-width: 800px)  {
+  .inparag img {
+    width: 50%;
+  }
+}
+
 
 
 .img-container {
