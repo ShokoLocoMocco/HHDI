@@ -224,12 +224,13 @@ body {
 }
 
 @supports (-webkit-touch-callout: none) {
-  .parallax { background-attachment: fixed; }
+  #ck, #bpl { background-attachment: fixed; }
 }
 
-.parallax { min-height: 100dvh; }
+#ck, #bpl { min-height: 100dvh; }
+
 @supports not (height: 100dvh) {
-  .parallax { min-height: 100vh; } /* fallback */
+  #ck, #bpl { min-height: 100vh; } /* fallback */
 }
 
 
